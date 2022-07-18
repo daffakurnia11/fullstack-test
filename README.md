@@ -25,23 +25,27 @@ Test overview:
 
 
 
-Generate all possible 2 pair of letters from inputted string, dropping any duplicates
+Create a function that able to genarate all possible 2-pair letters with conditions:
+- the pair only begins with vowel letter (a,i,u,e,o)
+- the pair only ends with consonants (b,c,d,f,g, etc)
+- the pair is unique in the array (no duplicates)
+
 result is in array, the order is up to you
 Example:
 ``` js
-input: "abc"
-output: ['ab', 'ac', 'ba', 'bc', 'ca', 'cb']
+input: "abcdefg"
+output: ['ab', 'ac', 'ad', 'af', 'ag', 'ef', 'eg']
 ```
 
 Example 2:
 ``` js
-input: "bba"
-output: ['bb', 'ba', 'ab']
+input: "monolith repo"
+output: ['on', 'ol', 'oi','ot', 'oh', 'or', 'op', 'it', 'ih', 'ir', 'ip', 'io', 'ep', 'eo']
 ```
 Example 3:
 ``` js
-input: "bbbcd"
-output: ['bb', 'bc', 'bd', 'cb', 'cd', 'db', 'dc']
+input: "bbbcd" or "mytho" or ""
+output: []
 ```
 Constraint:
 input length > 1
