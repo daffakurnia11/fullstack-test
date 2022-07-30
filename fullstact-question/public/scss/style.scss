@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Voltaire&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$primary: #d04848;
+$black: #000;
+
+body {
+  background-color: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.navbar {
+  background-color: $primary;
+}
+
+#home {
+  min-height: 100vh;
+  .home {
+    &-datetime {
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 84px;
+
+      color: $black;
+    }
+    &-weather {
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 84px;
+
+      color: $black;
+    }
+    &-button {
+      background-color: $primary;
+      padding: 37px 157px;
+      border-radius: 29px;
+      font-family: "Voltaire";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 37px;
+      transition: all 0.3s;
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}
+
+#posts {
+  padding-top: 120px;
+  .account {
+    position: relative;
+    &-detail {
+      opacity: 0;
+      z-index: -1;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      position: absolute;
+      border: 1px solid $black;
+      border-radius: 27px;
+      transition: ease-in-out 0.3s;
+    }
+    &:hover {
+      .account-detail {
+        opacity: 1;
+        z-index: 5;
+      }
+    }
+  }
+}

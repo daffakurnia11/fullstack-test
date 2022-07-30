@@ -1,5 +1,5 @@
 
-class Vehicle {
+export class Vehicle {
     wheel: number = 2;
     owner: string;
 
@@ -16,7 +16,17 @@ class Vehicle {
 }
 // Modify this block
 
-export default class Car {
+export default class Car extends Vehicle {
+    engine: string;
+    wheel: number = 4;
+
+    constructor(owner: string, engine: string) {
+        super(owner);
+        this.engine = engine
+    }
+    get_engine() {
+        return this.engine
+    }
 }
 
 
